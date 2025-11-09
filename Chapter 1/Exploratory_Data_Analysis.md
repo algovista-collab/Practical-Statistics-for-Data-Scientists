@@ -44,7 +44,8 @@ These statistics describe where the "center" or "typical" value of the data lies
 * **Meaning:** An average where each value contributes a different amount, based on a corresponding weight.
 * **Intuition:** Used when some values are inherently more important or representative than others (e.g., averaging grades where exams count more than quizzes, or adjusting for underrepresented groups in a sample).
 * **Formula:**
-    $$\bar{x}_w = \frac{\sum_{i=1}^{n} w_i x_i}{\sum_{i=1}^{n} w_i}$$
+
+$$\bar{x}_w = \frac{\sum_{i=1}^{n} w_i x_i}{\sum_{i=1}^{n} w_i}$$
 
 ### Median
 
