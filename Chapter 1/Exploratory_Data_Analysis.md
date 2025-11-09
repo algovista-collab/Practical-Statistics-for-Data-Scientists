@@ -128,15 +128,47 @@ While **estimates of location** (like mean and median) summarize the center of t
 
 ### Interquartile Range (IQR)
 
-* **Meaning:** The difference between the 75th percentile ($Q_3$) and the 25th percentile ($Q_1$). It measures the spread of the middle 50% of the data.
+* **Meaning:** The difference between the 75th percentile ($Q_3$) and the 25th percentile ($Q_1$). It measures the spread of the middle 50% of the data. To avoid the sensitivity of the range to the outliers, estimate is based on differences between percentiles, range of the data after dropping values from each end.
 * **Intuition:** Because it ignores the top 25% and bottom 25% of the data, the **IQR is robust to outliers**. It's a key component in defining box plots.
 * **Formula:**
     $$\text{IQR} = Q_3 - Q_1$$
 
 ---
 
-## Relationship Between Measures
+### Relationship Between Measures
 
 The Standard Deviation (SD) is always greater than or equal to the Mean Absolute Deviation (MAD), which itself is always greater than or equal to the Median Absolute Deviation (MAD from the median).
 
 $$\text{SD} \geq \text{MAD} \geq \text{Median Absolute Deviation}$$
+
+### Percentile Calculation (Weighted Average Method)
+
+This method involves determining the rank $j$ (the integer part) and the weight $w$ (the fractional part) based on the desired percentile $P$ and the total number of data points $n$.
+
+### Determining the Rank Range
+
+The rank $r$ for the $P$-th percentile is calculated as:
+$$r = \frac{P}{100} (n-1) + 1$$
+We then find the integer part of the rank, $j$, and the fractional part, $w$.
+
+The formula you provided describes the relationship between the percentile $P$ and the rank $j$ as it relates to the sorted data:
+
+$$\frac{100 \cdot j}{n} \leq P < \frac{100 \cdot (j+1)}{n}$$
+
+* **Intuition:** This inequality defines the range where the $P$-th percentile falls between the $j$-th observation ($x_{(j)}$) and the $(j+1)$-th observation ($x_{(j+1)}$) in the sorted data.
+
+### Percentile as a Weighted Average
+
+The $P$-th percentile is then calculated as the weighted average of the $j$-th and the $(j+1)$-th sorted data values.
+
+The provided weighted average formula, when using $x_{(j)}$ and $x_{(j+1)}$ as the $j$-th and $(j+1)$-th sorted observations, is:
+
+$$\text{Percentile } P = (1 - w) x_{(j)} + w x_{(j+1)}$$
+
+* **Where:**
+    * $x_{(j)}$ is the $j$-th observation (the value at rank $j$) in the sorted data.
+    * $x_{(j+1)}$ is the $(j+1)$-th observation (the value at rank $j+1$) in the sorted data.
+    * $w$ is the fractional weight derived from the rank calculation.
+    * **Intuition:** If the desired rank $r$ is exactly an integer ($w=0$), the percentile is simply $x_{(j)}$. If $r$ is exactly half-way between two ranks ($w=0.5$), it's the simple average of $x_{(j)}$ and $x_{(j+1)}$.
+
+> **Note:** Different statistical software and textbooks may use slightly different interpolation methods (like R-1, R-2, R-6, R-7, etc.) to define the rank $r$ and the weighted average, but the structure provided above is a common, standard approach (often referred to as the R-7 method).
