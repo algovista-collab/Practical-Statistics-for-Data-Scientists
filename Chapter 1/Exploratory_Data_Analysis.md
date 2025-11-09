@@ -172,3 +172,51 @@ $$\text{Percentile } P = (1 - w) x_{(j)} + w x_{(j+1)}$$
     * **Intuition:** If the desired rank $r$ is exactly an integer ($w=0$), the percentile is simply $x_{(j)}$. If $r$ is exactly half-way between two ranks ($w=0.5$), it's the simple average of $x_{(j)}$ and $x_{(j+1)}$.
 
 > **Note:** Different statistical software and textbooks may use slightly different interpolation methods (like R-1, R-2, R-6, R-7, etc.) to define the rank $r$ and the weighted average, but the structure provided above is a common, standard approach (often referred to as the R-7 method).
+
+## 1.5 Exploring the Distribution
+
+To fully understand a feature (column) in a dataset, we need to explore its **distribution**. This involves visualizing and summarizing how frequently different values or ranges of values occur.
+
+---
+
+### Boxplot (Box and Whisker Plot)
+
+* **Meaning:** A standardized way of displaying the distribution of numerical data based on five key number summaries.
+* **Intuition:** It visually summarizes the spread and skewness of the data and helps identify potential **outliers** at a glance.
+* **Key Components:**
+    * **Box:** Represents the Interquartile Range (**IQR**), containing the middle 50% of the data.
+    * **Line inside the Box:** Represents the **Median** ($Q_2$, the 50th percentile).
+    * **Edges of the Box:** The 25th percentile ($Q_1$) and the 75th percentile ($Q_3$).
+    * **Whiskers:** Extend from the box to the farthest data points that are not considered outliers.
+    * **Outliers:** Data points plotted individually beyond the whiskers.
+
+---
+
+### Frequency Table
+
+* **Meaning:** A table that lists the distinct values (or bins/intervals) for a variable and the count (frequency) of how many times each value occurs.
+* **Intuition:** Provides a raw, numerical summary of the distribution, especially useful for **categorical** or **discrete** data.
+* **Example (Ages):**
+
+| Age Range (Bin) | Count (Frequency) | Relative Frequency |
+| :--- | :--- | :--- |
+| 20-29 | 15 | 0.30 (30%) |
+| 30-39 | 25 | 0.50 (50%) |
+| 40-49 | 10 | 0.20 (20%) |
+| **Total** | **50** | **1.00 (100%)** |
+
+---
+
+### Histogram
+
+* **Meaning:** A graphical representation of a frequency distribution for **numerical data**. It uses adjacent vertical bars (bins) to show the frequency of data points falling into specified intervals.
+* **Intuition:** It provides the clearest visual picture of the **shape** of the distribution (e.g., normal, skewed right, bimodal). Unlike a bar chart, the area of the bar is proportional to the frequency, and there are no spaces between adjacent bars for continuous data.
+* **Key Consideration:** The number and size of the **bins** significantly impact the appearance and interpretation of the histogram.
+
+---
+
+### Density Plot (Kernel Density Estimate - KDE)
+
+* **Meaning:** A smoothing of the histogram, which estimates the probability density function of the data.
+* **Intuition:** Provides a continuous, smooth curve to visualize the distribution, making it easier to identify the shape and central peaks (modes) without the rigid, blocky structure of a histogram. It is particularly effective for **comparing the distribution of multiple variables** on the same graph.
+* **Calculation:** It works by placing a small, smooth curve (the **kernel**) over each data point and then summing these curves to get a final smooth density estimate.
