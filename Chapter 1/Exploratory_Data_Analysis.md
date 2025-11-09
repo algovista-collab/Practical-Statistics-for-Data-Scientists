@@ -75,3 +75,68 @@ $$\bar{x}_w = \frac{\sum_{i=1}^{n} w_i x_i}{\sum_{i=1}^{n} w_i}$$
 
 * **Robust:** A statistic is considered **robust** if it is not heavily influenced by extreme values or **outliers**. (e.g., Median, Trimmed Mean, Weighted Median).
 * **Outlier:** A data point that is significantly distant from other observations. Outliers can skew the results of non-robust statistics like the simple **mean**.
+
+## 1.4 Estimates of Variability (Dispersion)
+
+While **estimates of location** (like mean and median) summarize the center of the data, **estimates of variability** (or dispersion) describe whether the data values are **clustered** or **spread out**.
+
+---
+
+## Key Concepts
+
+* **Deviation (Error):** The difference between an **observed value** ($x_i$) and an **estimate of location** (e.g., the mean $\bar{x}$ or median $M$).
+    $$\text{Deviation} = x_i - \bar{x}$$
+* **Order Statistics:** Metrics based on the data values after they have been **sorted** from smallest to biggest.
+
+---
+
+## Measures of Variability
+
+### Variance
+
+* **Meaning:** The average of the squared deviations from the mean. It measures how far a set of numbers is spread out from their average value.
+* **Intuition:** Squaring the deviations ensures that both positive and negative differences contribute to the total spread. Since squaring magnifies the effect of large deviations, **variance is highly sensitive to outliers**.
+* **Formula (Sample Variance):**
+    $$s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}$$
+    > **Note:** We divide by $n-1$ instead of $n$ to provide an **unbiased estimate** of the population variance when using a sample.
+
+### Standard Deviation (SD)
+
+* **Meaning:** The square root of the variance. It returns the measure of variability to the **original units** of the data, making it more interpretable than variance.
+* **Intuition:** Represents the typical distance between the data points and the mean. Since it is derived from the variance, **SD is also sensitive to outliers**.
+* **Formula:**
+    $$s = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}}$$
+
+### Mean Absolute Deviation (MAD or $L_1$ Norm / Manhattan Norm)
+
+* **Meaning:** The average of the absolute values of the deviations from the mean.
+* **Intuition:** It's a straightforward average distance from the mean. By using the absolute value instead of squaring, it is **less sensitive to outliers** than the variance or SD, although still less robust than the median-based measure.
+* **Formula:**
+    $$\text{MAD} = \frac{\sum_{i=1}^{n} |x_i - \bar{x}|}{n}$$
+
+### Median Absolute Deviation (MAD from the Median)
+
+* **Meaning:** The median of the absolute deviations from the median.
+* **Intuition:** This is a **highly robust** estimate of variability. It uses the median (a robust location estimate) to calculate the deviations, and then takes the median of those deviations, effectively minimizing the influence of extreme outliers on the measure of spread.
+
+### Range
+
+* **Meaning:** The difference between the largest and smallest observed values in the dataset.
+* **Intuition:** Provides the simplest boundary of the data spread. It is **extremely sensitive to outliers** because it is calculated using only the two most extreme values, making it generally a poor measure of dispersion.
+* **Formula:**
+    $$\text{Range} = \text{Maximum Value} - \text{Minimum Value}$$
+
+### Interquartile Range (IQR)
+
+* **Meaning:** The difference between the 75th percentile ($Q_3$) and the 25th percentile ($Q_1$). It measures the spread of the middle 50% of the data.
+* **Intuition:** Because it ignores the top 25% and bottom 25% of the data, the **IQR is robust to outliers**. It's a key component in defining box plots.
+* **Formula:**
+    $$\text{IQR} = Q_3 - Q_1$$
+
+---
+
+## Relationship Between Measures
+
+The Standard Deviation (SD) is always greater than or equal to the Mean Absolute Deviation (MAD), which itself is always greater than or equal to the Median Absolute Deviation (MAD from the median).
+
+$$\text{SD} \geq \text{MAD} \geq \text{Median Absolute Deviation}$$
