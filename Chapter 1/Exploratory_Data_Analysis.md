@@ -82,7 +82,7 @@ While **estimates of location** (like mean and median) summarize the center of t
 
 ---
 
-## Key Concepts
+### Key Concepts
 
 * **Deviation (Error):** The difference between an **observed value** ($x_i$) and an **estimate of location** (e.g., the mean $\bar{x}$ or median $M$).
     $$\text{Deviation} = x_i - \bar{x}$$
@@ -90,7 +90,7 @@ While **estimates of location** (like mean and median) summarize the center of t
 
 ---
 
-## Measures of Variability
+### Measures of Variability
 
 ### Variance
 
