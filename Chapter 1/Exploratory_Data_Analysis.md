@@ -222,3 +222,21 @@ To fully understand a feature (column) in a dataset, we need to explore its **di
 * **Calculation:** It works by placing a small, smooth curve (the **kernel**) over each data point and then summing these curves to get a final smooth density estimate.
 
 > **Note:** In statistical theory, location and variability are referred to as the first and second moments of a distribution. The third and fourth moments are skewness (refers to whether the data is skewed to larger or smaller values) and kurtosis (indicates propensity of the data to have extreme values). They are discovered through visualization and not a metric.
+
+## 1.6 Exploring Categorical Data
+
+### Mode
+
+The most commonly occuring category or value in the dataset.
+
+### Expected Value
+
+The average value based on a probability of category's occurence when the categories can be associated with a numeric value.
+
+### Bar Charts
+
+The frequency or proportion for each category plotted as bars.
+
+### Pie Charts
+
+The frequency or proportion for each category plotted as wedges in a pie.
