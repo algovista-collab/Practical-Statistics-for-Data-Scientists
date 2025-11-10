@@ -232,3 +232,19 @@ To fully understand a feature (column) in a dataset, we need to explore its **di
 * **Bar Charts:** The frequency or proportion for each category plotted as bars.
 
 * **Pie Charts:** The frequency or proportion for each category plotted as wedges in a pie.
+
+### Correlation
+
+Examines correlation among predictors and between predictors and target variables. Variables X and Y are positively correlated if they both go up or go down, vice-versa negative correlation.
+
+* **Correlation coefficient:** A metric that measures the extent to which numeric variables are associated with one another (ranges from -1 to +1).
+
+* **Pearson's correlation coefficient**
+
+$$
+r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{(n - 1) s_x s_y}
+$$
+
+* **Correlation matrix:** A matrix with cell values are the correlations between the variables.
+
+* **Scatter Plot:** A plot in which x-axis is the value of one variable and y-axis is the value of another.
