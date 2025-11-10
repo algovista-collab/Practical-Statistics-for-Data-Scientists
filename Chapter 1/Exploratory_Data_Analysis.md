@@ -220,3 +220,5 @@ To fully understand a feature (column) in a dataset, we need to explore its **di
 * **Meaning:** A smoothing of the histogram, which estimates the probability density function of the data.
 * **Intuition:** Provides a continuous, smooth curve to visualize the distribution, making it easier to identify the shape and central peaks (modes) without the rigid, blocky structure of a histogram. It is particularly effective for **comparing the distribution of multiple variables** on the same graph.
 * **Calculation:** It works by placing a small, smooth curve (the **kernel**) over each data point and then summing these curves to get a final smooth density estimate.
+
+> **Note:** In statistical theory, location and variability are referred to as the first and second moments of a distribution. The third and fourth moments are skewness (refers to whether the data is skewed to larger or smaller values) and kurtosis (indicates propensity of the data to have extreme values).
