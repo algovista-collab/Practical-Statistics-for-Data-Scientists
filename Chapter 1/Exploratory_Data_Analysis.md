@@ -225,18 +225,10 @@ To fully understand a feature (column) in a dataset, we need to explore its **di
 
 ## 1.6 Exploring Categorical Data
 
-### Mode
+* **Mode:** The most commonly occuring category or value in the dataset.
 
-The most commonly occuring category or value in the dataset.
+* **Expected Value:** The average value based on a probability of category's occurence when the categories can be associated with a numeric value.
 
-### Expected Value
+* **Bar Charts:** The frequency or proportion for each category plotted as bars.
 
-The average value based on a probability of category's occurence when the categories can be associated with a numeric value.
-
-### Bar Charts
-
-The frequency or proportion for each category plotted as bars.
-
-### Pie Charts
-
-The frequency or proportion for each category plotted as wedges in a pie.
+* **Pie Charts:** The frequency or proportion for each category plotted as wedges in a pie.
