@@ -1,6 +1,6 @@
 # 📊 Data Exploration: Elements and Estimates
 
-The **first step** in any data science project is to **explore the data** to understand its characteristics, structure, and quality.
+The **first step** in any data science project is to **explore the data** to understand its characteristics, structure, and quality. Exploratory Data Analysis pioneered by John Tukey set a foundation for the field of data science.
 
 ---
 
