@@ -241,7 +241,7 @@ To fully understand a feature (column) in a dataset, we need to explore its **di
 
 Examines correlation among predictors and between predictors and target variables. Variables X and Y are positively correlated if they both go up or go down, vice-versa negative correlation.
 
-* **Correlation coefficient:** A metric that measures the extent to which numeric variables are associated with one another (ranges from -1 to +1). It is sensitive to outliers. sklearn.covariance implement different robust alternatives to the classical correlation coefficient.
+* **Correlation coefficient:** A metric that measures the extent to which numeric variables are associated with one another (ranges from -1 to +1). It is sensitive to outliers. sklearn.covariance implement different robust alternatives to the classical correlation coefficient. This is a bivariate analysis as it compares two variables. Mean and variance are univariate analysis.
 
 * **Pearson's correlation coefficient**
 
