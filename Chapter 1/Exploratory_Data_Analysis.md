@@ -71,6 +71,10 @@ $$\bar{x}_w = \frac{\sum_{i=1}^{n} w_i x_i}{\sum_{i=1}^{n} w_i}$$
 * **Meaning:** The mean calculated after discarding a fixed percentage of data points from both the high and low extremes (e.g., removing the top and bottom 5% of values).
 * **Intuition:** It is a compromise between the **mean** and the **median**. It reduces the influence of extreme values, making it more **robust** than the regular mean without discarding too much information.
 
+$$
+\bar{x}_{\text{trim}} = \frac{1}{n - 2k} \sum_{i = k+1}^{n-k} x_{(i)}
+$$
+
 ### Key Concepts
 
 * **Robust:** A statistic is considered **robust** if it is not heavily influenced by extreme values or **outliers**. (e.g., Median, Trimmed Mean, Weighted Median).
