@@ -259,6 +259,7 @@ $$
 
 * **Hexagonal binning:** A plot of two numeric variables with the records binned into hexagons.
 
-* **Contour plot:** A plot showing the density of two numeric variables like a topographical map.
+* **Contour plot:** A plot showing the density of two numeric variables like a topographical map. Contour and hexagonal gives graphical examination of 2 numerical variables at a time without being overwhelmed by huge amounts of data. A scatter plot will give monolithic dark cloud if the data points in millions, but these plots represent the density in color or lines.
 
-* **Violin plot:** Similar to a boxplot but showing the density estimate.
+* **Violin plot:** Similar to a boxplot but showing the density estimate. Violin plot and boxplot are used to plot a numeric variable against a categorical variable.
+
