@@ -63,7 +63,7 @@ $$\bar{x}_w = \frac{\sum_{i=1}^{n} w_i x_i}{\sum_{i=1}^{n} w_i}$$
 
 ### Weighted Median
 
-* **Meaning:** The value such that the sum of the weights of all observations less than or equal to the weighted median is at least half of the total sum of weights, and the sum of the weights of all observations greater than or equal to the weighted median is at least half of the total sum of weights.
+* **Meaning:** The value such that the sum of the weights of all observations less than or equal to the weighted median is at least half of the total sum of weights, and the sum of the weights of all observations greater than or equal to the weighted median is at least half of the total sum of weights. Sort based on values, get the cumulative sum of the weighted column and top most row whose cumulative sum is greater than equal to the total sum of the weight column is our weighted median.
 * **Intuition:** Similar to the weighted mean, it applies importance to observations via weights, but retains the **robustness** property of the regular median against outliers.
 
 ### Trimmed Mean (Truncated Mean)
