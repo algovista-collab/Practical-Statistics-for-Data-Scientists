@@ -252,3 +252,13 @@ $$
 * **Correlation matrix:** A matrix with cell values are the correlations between the variables.
 
 * **Scatter Plot:** A plot in which x-axis is the value of one variable and y-axis is the value of another.
+
+## 1.7 Exploring Two or More Variables
+
+* **Contingency Table:** A tally of counts between two or more categorical variables.
+
+* **Hexagonal binning:** A plot of two numeric variables with the records binned into hexagons.
+
+* **Contour plot:** A plot showing the density of two numeric variables like a topographical map.
+
+* **Violin plot:** Similar to a boxplot but showing the density estimate.
