@@ -263,4 +263,4 @@ $$
 
 * **Violin plot:** Similar to a boxplot but showing the density estimate. Violin plot and boxplot are used to plot a numeric variable against a categorical variable.
 
-Scatterplot, Hexagonal binning, boxplot are used to compare 2 variables and can also be extended to more variables using the notion of conditioning/facets and facets are easier in seaborn than Matplotlib.
+Scatterplot, Hexagonal binning, boxplot are used to compare 2 variables and can also be extended to more variables using the notion of conditioning/facets and facets are easier in seaborn than Matplotlib. The concept of conditioning variables in a graphics system was pioneered with Trellis graphics at Bell Labs.
