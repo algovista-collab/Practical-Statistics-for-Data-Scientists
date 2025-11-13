@@ -61,3 +61,50 @@ Data quality involves:
 
 * Having **holdout sets** (more than one) to validate performance.
 * **Target Shuffling**: A test to validate the predictive associations suggested by a data mining model.
+
+# 📉 1.2 Sampling Distribution of a Statistic
+
+## Key Definitions
+
+| Term | Definition |
+| :--- | :--- |
+| **Sample Statistic** | A metric (e.g., mean, median, standard deviation) calculated for a single sample of data drawn from a larger population. |
+| **Data Distribution** | The frequency distribution of individual values within a single sample. |
+| **Sampling Distribution** | The frequency distribution of a **sample statistic** over many samples or resamples drawn from the population. |
+
+### Visualizing the Sampling Distribution
+
+The sampling distribution is created by:
+1.  Drawing many samples (e.g., 1,000 samples) of a specific size (e.g., size $n=10$).
+2.  Calculating the statistic (e.g., mean $\bar{x}$) for each of the $k$ samples ($\bar{x}_1, \bar{x}_2, \ldots, \bar{x}_{k}$).
+3.  Drawing a frequency distribution of these $k$ calculated means. 
+
+---
+
+## Standard Error (SE)
+
+The **Standard Error (SE)** quantifies the **variability of a sample statistic** over many samples.
+* **Sampling Variability**: Different samples from the same population will yield different measurements (statistics). The key concern is knowing *how* different these measurements are.
+* In traditional statistics, the SE is crucial because we make inferences about the population based on a single sample statistic.
+
+### The Central Limit Theorem (CLT)
+
+The CLT describes the theoretical behavior of the sampling distribution:
+* The sampling distribution of the mean tends to take on a **normal shape** as the sample size ($n$) increases, regardless of the population's underlying distribution.
+* **The Square Root of $n$ Rule**: This rule defines the relationship between the Standard Error (SE) and the sample size:
+    $$SE \approx \frac{s}{\sqrt{n}}$$
+    Where $s$ is the standard deviation of the sample, and $n$ is the sample size.
+
+### Calculating Standard Error without CLT
+
+If we could collect multiple new samples, the SE could be calculated empirically:
+1.  Collect $n$ new samples.
+2.  For each sample, calculate the desired statistic (e.g., the mean).
+3.  Calculate the **Standard Deviation (SD)** of all the resulting sample means. This value is the **Standard Error (SE)**.
+
+**The Problem**: Collecting many new samples is often not feasible or too expensive.
+
+### Practical Solution: Bootstrapping
+
+The **bootstrap resamples** method is the solution used to estimate the Standard Error and other statistics without relying on the Central Limit Theorem.
+* It involves repeatedly drawing samples **with replacement** from the single sample you already have.
