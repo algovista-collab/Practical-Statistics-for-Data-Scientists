@@ -62,7 +62,7 @@ Data quality involves:
 * Having **holdout sets** (more than one) to validate performance.
 * **Target Shuffling**: A test to validate the predictive associations suggested by a data mining model.
 
-# 📉 1.2 Sampling Distribution of a Statistic
+# 1.2 Sampling Distribution of a Statistic
 
 ## Key Definitions
 
@@ -121,3 +121,55 @@ The percentage associated with the confidence interval is termed the level of co
 A Confidence Interval is generally calculated as:
 
 $$\text{CI} = \text{Point Estimate} \pm (\text{Critical Value} \times \text{Standard Error})$$
+
+# 1.3 Distributions
+
+## 1. Normal Distribution (Gaussian Distribution)
+
+The **Normal Distribution** is a symmetric, bell-shaped distribution defined by its mean ($\mu$) and standard deviation ($\sigma$).
+
+* **Standardize**: The process of transforming an individual data point by subtracting the mean and dividing the result by the standard deviation.
+* **Z-score**: The result of standardizing an individual data point. It represents how many standard deviations the value is away from the mean.
+* **Standard Normal Distribution**: A specific Normal distribution with a **mean ($\mu$) = 0** and a **standard deviation ($\sigma$) = 1**.
+* **Empirical Rule**:
+    * $\approx 68\%$ of the data lies within **one** standard deviation ($\pm 1\sigma$) of the mean.
+    * $\approx 95\%$ of the data lies within **two** standard deviations ($\pm 2\sigma$) of the mean.
+    * $\approx 99.7\%$ of the data lies within **three** standard deviations ($\pm 3\sigma$) of the mean.
+
+### QQ Plot
+
+A **QQ Plot (Quantile-Quantile Plot)** is a graphical tool used to visualize how closely a sample distribution follows a specified theoretical distribution (like the Normal distribution).
+* It plots the $z$-score (or the observed data value) on the y-axis against the corresponding **quantile** (or theoretical $z$-score) of the specified distribution on the x-axis.
+
+---
+
+## 2. Standard Normal Distribution/Z-score Distribution
+
+The process of converting a distribution into the Standard Normal Distribution is called **normalization** or **standardization**.
+* The units on the x-axis are expressed in terms of the **number of standard deviations away from the mean**.
+
+$$\text{z} = \frac{x - \mu}{\sigma}$$
+
+---
+
+## 3. Long-Tailed Distribution
+
+* **Tail**: The long, narrow portion of a frequency distribution where **extreme values** occur at low frequency.
+* **Skew**: A phenomenon where one tail of a distribution is longer than the other, indicating asymmetry.
+* **Black Swan Theory (Nassim Taleb)**: Predicts that anomalous events (like a stock market crash) are much more likely to occur than would be predicted by the Normal distribution.
+    * Tukey referred to this phenomenon as data being "normal in the middle but having **longer tails**." This means extreme events have a higher probability than the Normal distribution suggests.
+
+---
+
+## 4. Student's t-distribution
+
+The **Student's t-distribution** is a family of distributions often used instead of the Normal distribution when the sample size is small or the population standard deviation is unknown.
+* It is **normally shaped** but is generally **thicker and longer on the tails** than the standard normal distribution.
+* As the **sample size increases**, the $t$-distribution becomes progressively more similar to the standard normal distribution.
+* The family of $t$-distributions differs based on a parameter called **Degrees of Freedom**.
+
+### Degrees of Freedom (DF)
+
+**Degrees of Freedom ($df$)** is a parameter that allows the $t$-distribution to adjust to different sample sizes, statistics, and number of groups.
+* For a single sample of size $n$, the degrees of freedom are typically **$n-1$**.
+* **Intuitive Explanation**: If you know the sample mean and the sample size ($n$), only $n-1$ values in the sample can be freely chosen; the last value **must be fixed** to ensure the sample retains the pre-determined mean.
