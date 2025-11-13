@@ -57,7 +57,7 @@ Data quality involves:
 
 ---
 
-## Solutions to Avoid Bias
+### Solutions to Avoid Bias
 
 * Having **holdout sets** (more than one) to validate performance.
 * **Target Shuffling**: A test to validate the predictive associations suggested by a data mining model.
