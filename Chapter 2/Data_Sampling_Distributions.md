@@ -106,5 +106,10 @@ If we could collect multiple new samples, the SE could be calculated empirically
 
 ### Practical Solution: Bootstrapping
 
-The **bootstrap resamples** method is the solution used to estimate the Standard Error and other statistics without relying on the Central Limit Theorem.
-* It involves repeatedly drawing samples **with replacement** from the single sample you already have.
+The **bootstrap resamples** method is the solution used to estimate the Standard Error and other statistics without relying on the Central Limit Theorem. It involves repeatedly drawing samples **with replacement** from the single sample you already have.
+
+1. Draw a sample value (ex: original sample has size of m = 100 observations) pick one sample value (say 9) and record it and then replace it
+2. Repeat n times (take n sample values with replacement from m observations)
+3. Record the mean of these n resampled values
+4. Repeat steps 1-3 R times, we will have R different means
+5. Use it to calculate their standard deviation and produce a histogram/boxplot and find a confidence interval
