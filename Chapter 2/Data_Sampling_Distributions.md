@@ -173,3 +173,82 @@ The **Student's t-distribution** is a family of distributions often used instead
 **Degrees of Freedom ($df$)** is a parameter that allows the $t$-distribution to adjust to different sample sizes, statistics, and number of groups.
 * For a single sample of size $n$, the degrees of freedom are typically **$n-1$**.
 * **Intuitive Explanation**: If you know the sample mean and the sample size ($n$), only $n-1$ values in the sample can be freely chosen; the last value **must be fixed** to ensure the sample retains the pre-determined mean.
+
+---
+
+### 5. Binomail Distribution
+
+* **Trial**: An event with a discrete outcome (coin flip).
+* **Success**: Outcome of interest for a trial.
+* **Binomial**: Having 2 outcomes.
+* **Binomial Trial**: A trial with 2 outcomes (Bernoulli Trail).
+* **Binomial Distribution**: Distribution of number of success in n trials. It is a frequency distribution of the number of successes in a given number of trails (n) with specified probability (p) of success in each trial. Depending of the values of n and p, there is a family of Binomial Distribution.
+
+---
+
+## 6. Chi-Square ($\chi^2$) Distribution
+
+The **Chi-Square Distribution** is a non-negative, right-skewed distribution primarily used in hypothesis testing.
+
+* **Definition**: It describes the distribution of the sum of the squares of independent standard normal random variables.
+* **Parameter**: It is defined by its **degrees of freedom ($df$)**. As the $df$ increases, the distribution becomes more symmetrical and approaches the normal distribution.
+* **Key Uses**:
+    * Testing the **independence** of two categorical variables (Chi-Square Test of Independence).
+    * Testing the **goodness of fit** of an observed distribution to a theoretical distribution.
+    * Calculating confidence intervals and conducting hypothesis tests for the **population variance**.
+
+> **Example**: Testing whether the color preference of a car is independent of the buyer's age group. The test statistic calculated from the observed data follows a Chi-Square distribution. 
+
+---
+
+## 7. F-Distribution (Fisher-Snedecor Distribution)
+
+The **F-Distribution** is a continuous probability distribution that is non-negative and typically right-skewed.
+
+* **Definition**: It is the distribution of the ratio of two independent Chi-Square distributions, each divided by its respective degrees of freedom.
+* **Parameters**: It is defined by **two sets of degrees of freedom**: $df_1$ (numerator) and $df_2$ (denominator).
+* **Key Uses**:
+    * **Analysis of Variance (ANOVA)**: Testing the equality of means across three or more groups.
+    * Testing the equality of **two population variances**.
+    * Testing the significance of a regression model.
+
+> **Example**: In a one-way ANOVA, the **F-statistic** is used to determine if there is a significant difference between the mean yield of three different fertilizer types. This statistic is compared against the F-Distribution. 
+
+---
+
+## 8. Poisson Distribution
+
+The **Poisson Distribution** is a discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time or space.
+
+* **Definition**: It models the number of events that happen within a fixed period, assuming these events occur with a known constant rate and independently of the time since the last event.
+* **Parameter**: It is defined by the mean **rate ($\lambda$)**, which is the average number of events per interval.
+* **Key Property**: For a Poisson distribution, the mean and the variance are equal to $\lambda$.
+
+> **Example**: Calculating the probability that a bank's ATM will experience exactly four withdrawals during a five-minute period, given that the average rate of withdrawals is two per five-minute period ($\lambda = 2$).
+
+---
+
+## 9. Exponential Distribution
+
+The **Exponential Distribution** is a continuous probability distribution that describes the time *between* events in a Poisson process.
+
+* **Definition**: It models the waiting time until the next event, given a constant average rate of occurrence ($\lambda$). It is the continuous counterpart to the geometric distribution (which is discrete).
+* **Key Property**: It is **memoryless**, meaning the probability of an event occurring in the next interval is independent of how much time has already passed.
+* **Parameter**: It is defined by the **rate parameter ($\lambda$)** (or its reciprocal, the mean waiting time $\beta = 1/\lambda$).
+* **Key Use**: Reliability analysis and survival analysis.
+
+> **Example**: Predicting the probability that a piece of electronic equipment, which fails at a constant rate, will last for more than 1,000 hours before its first failure.
+
+---
+
+## 10. Weibull Distribution
+
+The **Weibull Distribution** is a highly flexible continuous probability distribution used primarily in failure analysis.
+
+* **Definition**: It is often used to model time-to-failure data, but it can also model other data like wind speed or insurance claims.
+* **Parameters**: It is defined by two or three parameters:
+    1.  **Shape Parameter ($k$)** or $\beta$: Describes the shape of the distribution (determines if the failure rate is increasing, decreasing, or constant).
+    2.  **Scale Parameter ($\lambda$)** or $\eta$: Relates to the characteristic life or time.
+* **Relationship to other distributions**: The Exponential distribution is a special case of the Weibull distribution when the shape parameter $k=1$.
+
+> **Example**: Modeling the lifetime of light bulbs. By adjusting the shape parameter ($k$), the Weibull distribution can model different failure modes, such as early-life failures ($k<1$) or wear-out failures ($k>1$).
