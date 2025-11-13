@@ -76,7 +76,7 @@ Data quality involves:
 
 The sampling distribution is created by:
 1.  Drawing many samples (e.g., 1,000 samples) of a specific size (e.g., size $n=10$).
-2.  Calculating the statistic (e.g., mean $\bar{x}$) for each of the $k$ samples ($$\bar{x}_1, \bar{x}_2, ..., \bar{x}_{k}$$).
+2.  Calculating the statistic (e.g., mean $\bar{x}$) for each of the $k$ samples ($$\bar{x}1, \bar{x}2, ..., \bar{x}{k}$$).
 3.  Drawing a frequency distribution of these $k$ calculated means. 
 
 ---
