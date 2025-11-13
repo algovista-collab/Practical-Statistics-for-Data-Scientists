@@ -117,3 +117,7 @@ The **bootstrap resamples** method is the solution used to estimate the Standard
 7. The trim points are the endpoints of an x% bootstrap confidence interval.
 
 The percentage associated with the confidence interval is termed the level of confidence. The higher the level of confidence, the wider the interval. Also, the smaller the sample, the wider the interval (i.e., the greater the uncertainty). Both make sense: the more confident you want to be, and the less data you have, the wider you must make the confidence interval to be sufficiently assured of capturing the true value.
+
+A Confidence Interval is generally calculated as:
+
+$$\text{CI} = \text{Point Estimate} \pm (\text{Critical Value} \times \text{Standard Error})$$
