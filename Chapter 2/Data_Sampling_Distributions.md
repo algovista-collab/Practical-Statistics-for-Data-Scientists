@@ -136,6 +136,8 @@ The **Normal Distribution** is a symmetric, bell-shaped distribution defined by 
     * $\approx 95\%$ of the data lies within **two** standard deviations ($\pm 2\sigma$) of the mean.
     * $\approx 99.7\%$ of the data lies within **three** standard deviations ($\pm 3\sigma$) of the mean.
 
+<img width="841" height="630" alt="Screenshot 2025-11-13 184033" src="https://github.com/user-attachments/assets/158076ef-34ef-4b32-b259-29c86ff1745e" />
+
 ### QQ Plot
 
 A **QQ Plot (Quantile-Quantile Plot)** is a graphical tool used to visualize how closely a sample distribution follows a specified theoretical distribution (like the Normal distribution).
