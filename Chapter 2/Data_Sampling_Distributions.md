@@ -113,3 +113,5 @@ The **bootstrap resamples** method is the solution used to estimate the Standard
 3. Record the mean of these n resampled values
 4. Repeat steps 1-3 R times, we will have R different means
 5. Use it to calculate their standard deviation and produce a histogram/boxplot and find a confidence interval
+6. For an x% confidence interval, trim [(100 - x) / 2]% of the R resample results from either end of the distribution.
+7. The trim points are the endpoints of an x% bootstrap confidence interval.
