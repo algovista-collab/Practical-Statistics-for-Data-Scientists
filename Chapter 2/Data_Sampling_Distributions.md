@@ -116,7 +116,7 @@ The **bootstrap resamples** method is the solution used to estimate the Standard
 6. For an x% confidence interval, trim [(100 - x) / 2]% of the R resample results from either end of the distribution.
 7. The trim points are the endpoints of an x% bootstrap confidence interval.
 
-The percentage associated with the confidence interval is termed the level of confidence. The higher the level of confidence, the wider the interval. Also, the smaller the sample, the wider the interval (i.e., the greater the uncertainty). Both make sense: the more confident you want to be, and the less data you have, the wider you must make the confidence interval to be sufficiently assured of capturing the true value.
+The percentage associated with the confidence interval is termed the level of confidence. The higher the level of confidence, the wider the interval. Also, the smaller the sample, the wider the interval (i.e., the greater the uncertainty). Both make sense: the more confident you want to be, and the less data you have, the wider you must make the confidence interval to be sufficiently assured of capturing the true value. This means, if we take many confidence intervals using the same method then 95% of those intervals will contain the true mean (mean of population which is fixed and unknown).
 
 A Confidence Interval is generally calculated as:
 
