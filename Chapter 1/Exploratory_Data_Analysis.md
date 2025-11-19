@@ -35,7 +35,7 @@ These statistics describe where the "center" or "typical" value of the data lies
 ### Mean (Average)
 
 * **Meaning:** The sum of all values divided by the number of values. It's the most common measure of central tendency.
-* **Intuition:** The point where the dataset would balance, physically speaking. It is sensitive to **outliers**.
+* **Intuition:** The point where the dataset would balance, physically speaking. It is sensitive to **outliers**. In the left-skewed data (tails on left), mean is lesser than median as mean is pulled towards the outliers on the left and in the right-skewed data (tails on right), mean is higher than median as outliers lie on the right side.
 * **Formula:**
     $$\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}$$
 
