@@ -199,7 +199,7 @@ To fully understand a feature (column) in a dataset, we need to explore its **di
 ### Frequency Table
 
 * **Meaning:** A table that lists the distinct values (or bins/intervals) for a variable and the count (frequency) of how many times each value occurs.
-* **Intuition:** Provides a raw, numerical summary of the distribution, especially useful for **categorical** or **discrete** data. Quartiles and Deciles will have the same count in each bin but the bin sizes are different.
+* **Intuition:** Provides a raw, numerical summary of the distribution, especially useful for **categorical** or **discrete** data. Quartiles and Deciles will have the same count in each bin but the bin sizes are different. Quartiles divides the dataset into 4, quintiles divides the dataset into 5, deciles divides the dataset into 10.
 * **Example (Ages):**
 
 | Age Range (Bin) | Count (Frequency) | Relative Frequency |
