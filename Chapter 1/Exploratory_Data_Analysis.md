@@ -231,7 +231,7 @@ To fully understand a feature (column) in a dataset, we need to explore its **di
 
 * **Mode:** The most commonly occuring category or value in the dataset.
 
-* **Probability Distribution:** It describes the probability of each possible outcome in a scenario. Rolling a dice, each outcomes has a probability of 1/6. Expected value is the mean = (1*1/6) + (2*1/6) + (3*1/6) + (4*1/6) + (5*1/6) + (6*1/6) = 3.5. All of them have same probability, it is called discrete uniform distribution. 
+* **Probability Distribution:** It describes the probability of each possible outcome in a scenario. Rolling a dice, each outcomes has a probability of 1/6. Expected value is the mean = (1*1/6) + (2*1/6) + (3*1/6) + (4*1/6) + (5*1/6) + (6*1/6) = 3.5. All of them have same probability, it is called discrete uniform distribution. Expected value is the theoritical mean but sample mean will be different because of randomness in reality. More the sample size, sample mean will be closer to the expected value.
 
 * **Expected Value:** The average value based on a probability of category's occurence when the categories can be associated with a numeric value. It is a form of weighted mean, in which weight are the probabilities. It adds the ideas of future expectations and probability weights, often based on subjective judgement.
 
