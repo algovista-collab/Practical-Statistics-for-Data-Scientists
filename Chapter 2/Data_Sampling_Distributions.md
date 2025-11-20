@@ -9,6 +9,8 @@ A **Sample** is a subset of data from a larger dataset called the **Population**
 **Random sampling** is a process in which each available member of the population has an **equal chance** to be chosen at each draw.
 * The resulting sample is called a **Simple Random Sample**.
 * It can be done **with replacement** (members can be selected more than once) or **without replacement** (members cannot be selected more than once).
+* Two events are independent if the probability of the second event is not affected by the outcome of the first event. When we pick one row out of 4 rows, each have probability of 25% and we replace the picked row. Second event also picks one row out of 4, each have the same probability hence Sampling with replacement are independent events.
+* When we do not replace the row we picked the first time, then picking that row for the second time has 0% probability and every other rows have 1/3 (33%) probability. Hence two events **are dependent** as the second event is getting affected by the first event.
 
 ### Stratified Sampling
 
