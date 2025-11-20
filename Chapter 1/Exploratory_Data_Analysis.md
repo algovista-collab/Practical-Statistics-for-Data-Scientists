@@ -134,8 +134,8 @@ While **estimates of location** (like mean and median) summarize the center of t
 
 * **Meaning:** The difference between the 75th percentile ($Q_3$) (also third quartile) and the 25th percentile ($Q_1$) (also first quartile). It measures the spread of the middle 50% of the data. To avoid the sensitivity of the range to the outliers, estimate is based on differences between percentiles, range of the data after dropping values from each end.
 * **Intuition:** Because it ignores the top 25% and bottom 25% of the data, the **IQR is robust to outliers**. It's a key component in defining box plots.
-* **Formula:**
-    $$\text{IQR} = Q_3 - Q_1$$
+* **Formula:** $$\text{IQR} = Q_3 - Q_1$$
+* **Outliers:** data < Q1 - 1.5 * IQR or data > Q3 + 1.5 * IQR
 
 ---
 
