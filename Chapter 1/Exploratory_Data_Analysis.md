@@ -229,7 +229,7 @@ To fully understand a feature (column) in a dataset, we need to explore its **di
 
 ## 1.6 Exploring Categorical Data
 
-* **Mode:** The most commonly occuring category or value in the dataset.
+* **Mode:** The most commonly occuring category or value in the dataset. If all values occur only once, there is no mode. If one value appear more than anything other value, it is unimodal. If there are 2 values with same frequency, it is bimodal. If there are 3 or more values with same frequency, it is multimodal.
 
 * **Probability Distribution:** It describes the probability of each possible outcome in a scenario. Rolling a dice, each outcomes has a probability of 1/6. Expected value is the mean = (1*1/6) + (2*1/6) + (3*1/6) + (4*1/6) + (5*1/6) + (6*1/6) = 3.5. All of them have same probability, it is called discrete uniform distribution. Expected value is the theoritical mean but sample mean will be different because of randomness in reality. More the sample size, sample mean will be closer to the expected value.
 
