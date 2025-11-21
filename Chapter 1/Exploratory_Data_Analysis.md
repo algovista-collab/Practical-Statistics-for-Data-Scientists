@@ -53,7 +53,7 @@ RMS = $$\sqrt{\frac{1}{n} \sum_{i=1}^{n} x_i^2}$$
 
 HM < GM < AM < RMS
 
-### Coefficient of Variation (CV)
+### Coefficient of Variation (CV): Ration of standard deviation and the mean
 
 ### General Formula (as a ratio)
 CV = $$\frac{\sigma}{\mu}$$
@@ -63,11 +63,6 @@ CV = $$\frac{\sigma}{\mu} \times 100\%$$
 
 ### Using Sample Notation (for a sample of data)
 CV_{\text{sample}} = \frac{s}{\bar{x}}
-
-\sigma (sigma) is the Population Standard Deviation
-s is the Sample Standard Deviation
-\mu (mu) is the Population Mean
-\bar{x} (x-bar) is the Sample Mean
 
 ### Weighted Mean (Weighted Average)
 
