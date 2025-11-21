@@ -1,6 +1,6 @@
 # 📊 Data Exploration: Elements and Estimates
 
-The **first step** in any data science project is to **explore the data** to understand its characteristics, structure, and quality. Exploratory Data Analysis pioneered by John Tukey set a foundation for the field of data science. Descriptive Statistics is to describe data like what percentage of data is what (.describe) and Inferential Statistics is to draw inference on a population based on sample data (confidence intervals, p-values, hypothesis testing).
+The **first step** in any data science project is to **explore the data** to understand its characteristics, structure, and quality. Exploratory Data Analysis pioneered by John Tukey set a foundation for the field of data science. Descriptive Statistics is to describe data like what percentage of data is what (.describe) using numbers (ex: mean, median, range, SD) and graphs (ex: bar graphs, histograms) and Inferential Statistics is to draw inference on a population based on sample data (confidence intervals, p-values, hypothesis testing).
 
 ---
 
