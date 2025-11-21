@@ -10,8 +10,8 @@ Understanding data types is crucial because it signals to the software how the d
 
 | Data Type Category | Type | Intuition/Meaning |
 | :--- | :--- | :--- |
-| **Quantitative (Numerical)** | **Continuous** | Data that can take any value within a given range (e.g., temperature, height). |
-| | **Discrete** | Data that can only take specific, fixed values, often integers (e.g., count of items, number of customers). |
+| **Quantitative (Numerical)** | **Continuous** | Data that can take any value within a given range (e.g., temperature, height). It can be measured. |
+| | **Discrete** | Data that can only take specific, fixed values, often integers (e.g., count of items, number of customers). It can be counted. |
 | **Qualitative (Categorical)** | **Binary (Nominal)** | A variable with only two categories, which have no intrinsic order (e.g., Yes/No, True/False, Male/Female). |
 | | **Ordinal** | A variable where the categories have a meaningful, inherent order or rank (e.g., Low/Medium/High, Survey responses like 'Agree' to 'Strongly Disagree'). |
 
