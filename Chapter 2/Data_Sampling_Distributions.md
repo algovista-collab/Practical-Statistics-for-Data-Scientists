@@ -1,6 +1,6 @@
 # 1.1 Random Sampling and Sample Bias
 
-A **Sample** is a subset of data from a larger dataset called the **Population**.
+A **Sample** is a subset of data from a larger dataset called the **Population**. A Statistic is a characteristic that describes the sample and a Parameter is a characteristic that describes the population.
 
 ---
 
