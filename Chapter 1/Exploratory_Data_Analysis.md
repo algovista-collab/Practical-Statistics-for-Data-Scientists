@@ -43,23 +43,23 @@ These statistics describe where the "center" or "typical" value of the data lies
 HM = $$\frac{n}{\sum_{i=1}^{n} \frac{1}{x_i}}$$
 
 ### Geometric Mean (GM)
-GM = \sqrt[n]{\prod_{i=1}^{n} x_i}
+GM = $$\sqrt[n]{\prod_{i=1}^{n} x_i}$$
 
 ### Arithmetic Mean (AM)
-AM = \frac{1}{n} \sum_{i=1}^{n} x_i
+AM = $$\frac{1}{n} \sum_{i=1}^{n} x_i$$
 
 ### Root Mean Square (RMS)
-RMS = \sqrt{\frac{1}{n} \sum_{i=1}^{n} x_i^2}
+RMS = $$\sqrt{\frac{1}{n} \sum_{i=1}^{n} x_i^2}$$
 
 HM < GM < AM < RMS
 
 ### Coefficient of Variation (CV)
 
 ### General Formula (as a ratio)
-CV = \frac{\sigma}{\mu}
+CV = $$\frac{\sigma}{\mu}$$
 
 ### General Formula (as a percentage, common in practice)
-CV = \frac{\sigma}{\mu} \times 100\%
+CV = $$\frac{\sigma}{\mu} \times 100\%$$
 
 ### Using Sample Notation (for a sample of data)
 CV_{\text{sample}} = \frac{s}{\bar{x}}
