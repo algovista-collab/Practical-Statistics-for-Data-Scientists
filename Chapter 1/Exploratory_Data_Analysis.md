@@ -40,7 +40,7 @@ These statistics describe where the "center" or "typical" value of the data lies
     $$\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}$$
 
 ### Harmonic Mean (HM)
-HM = \frac{n}{\sum_{i=1}^{n} \frac{1}{x_i}}
+HM = $$\frac{n}{\sum_{i=1}^{n} \frac{1}{x_i}}$$
 
 ### Geometric Mean (GM)
 GM = \sqrt[n]{\prod_{i=1}^{n} x_i}
@@ -50,6 +50,7 @@ AM = \frac{1}{n} \sum_{i=1}^{n} x_i
 
 ### Root Mean Square (RMS)
 RMS = \sqrt{\frac{1}{n} \sum_{i=1}^{n} x_i^2}
+
 HM < GM < AM < RMS
 
 ### Coefficient of Variation (CV)
